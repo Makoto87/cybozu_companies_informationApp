@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests : NSObject
+@end
+@implementation PodsDummy_Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests
+@end

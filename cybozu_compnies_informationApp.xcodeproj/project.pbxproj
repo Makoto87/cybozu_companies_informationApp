@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E533694348EF21ABACB923D /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B8973430AE1590CBB18E2 /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework */; };
+		340DE90F23EC64E000127F8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 340DE90E23EC64E000127F8C /* GoogleService-Info.plist */; };
+		3422490723EDB57D0040709A /* CompaniesInformationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3422490623EDB57D0040709A /* CompaniesInformationTableViewController.swift */; };
 		344FEFBB23EB19C0008B4014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFBA23EB19C0008B4014 /* AppDelegate.swift */; };
 		344FEFBD23EB19C0008B4014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFBC23EB19C0008B4014 /* SceneDelegate.swift */; };
 		344FEFBF23EB19C0008B4014 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFBE23EB19C0008B4014 /* ViewController.swift */; };
@@ -15,6 +18,8 @@
 		344FEFC723EB19C2008B4014 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344FEFC523EB19C2008B4014 /* LaunchScreen.storyboard */; };
 		344FEFD223EB19C2008B4014 /* cybozu_compnies_informationAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFD123EB19C2008B4014 /* cybozu_compnies_informationAppTests.swift */; };
 		344FEFDD23EB19C2008B4014 /* cybozu_compnies_informationAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFDC23EB19C2008B4014 /* cybozu_compnies_informationAppUITests.swift */; };
+		4079613DBA210E5377ACD99F /* Pods_cybozu_compnies_informationAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4816EC839026EB4391871271 /* Pods_cybozu_compnies_informationAppTests.framework */; };
+		BA93095EC98A15F11F1DA73D /* Pods_cybozu_compnies_informationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0182FC3ED0049673899987D8 /* Pods_cybozu_compnies_informationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0182FC3ED0049673899987D8 /* Pods_cybozu_compnies_informationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cybozu_compnies_informationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1449BDE122B6F05811C0F0A9 /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		340DE90E23EC64E000127F8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3422490623EDB57D0040709A /* CompaniesInformationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesInformationTableViewController.swift; sourceTree = "<group>"; };
 		344FEFB723EB19C0008B4014 /* cybozu_compnies_informationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cybozu_compnies_informationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FEFBA23EB19C0008B4014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		344FEFBC23EB19C0008B4014 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +58,13 @@
 		344FEFD823EB19C2008B4014 /* cybozu_compnies_informationAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cybozu_compnies_informationAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FEFDC23EB19C2008B4014 /* cybozu_compnies_informationAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cybozu_compnies_informationAppUITests.swift; sourceTree = "<group>"; };
 		344FEFDE23EB19C2008B4014 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		474B8973430AE1590CBB18E2 /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4816EC839026EB4391871271 /* Pods_cybozu_compnies_informationAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cybozu_compnies_informationAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701542C510A9AC3AA04E12CF /* Pods-cybozu_compnies_informationAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationAppTests.debug.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationAppTests/Pods-cybozu_compnies_informationAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7932C737A67DC993BF3C4D8D /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.release.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		91184C9903CBE7A9F0D03D06 /* Pods-cybozu_compnies_informationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationApp.debug.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		CE55C4E6F7E8D26E39EBCBA6 /* Pods-cybozu_compnies_informationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationApp.release.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp.release.xcconfig"; sourceTree = "<group>"; };
+		D31E54E714E226A0ACA4DDD8 /* Pods-cybozu_compnies_informationAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationAppTests.release.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationAppTests/Pods-cybozu_compnies_informationAppTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA93095EC98A15F11F1DA73D /* Pods_cybozu_compnies_informationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4079613DBA210E5377ACD99F /* Pods_cybozu_compnies_informationAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +88,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E533694348EF21ABACB923D /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23F8D050E757790F6A81A63C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				91184C9903CBE7A9F0D03D06 /* Pods-cybozu_compnies_informationApp.debug.xcconfig */,
+				CE55C4E6F7E8D26E39EBCBA6 /* Pods-cybozu_compnies_informationApp.release.xcconfig */,
+				1449BDE122B6F05811C0F0A9 /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig */,
+				7932C737A67DC993BF3C4D8D /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.release.xcconfig */,
+				701542C510A9AC3AA04E12CF /* Pods-cybozu_compnies_informationAppTests.debug.xcconfig */,
+				D31E54E714E226A0ACA4DDD8 /* Pods-cybozu_compnies_informationAppTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		344FEFAE23EB19C0008B4014 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +115,8 @@
 				344FEFD023EB19C2008B4014 /* cybozu_compnies_informationAppTests */,
 				344FEFDB23EB19C2008B4014 /* cybozu_compnies_informationAppUITests */,
 				344FEFB823EB19C0008B4014 /* Products */,
+				23F8D050E757790F6A81A63C /* Pods */,
+				3D3A035ADAC4531F623C7C6A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +136,12 @@
 				344FEFBA23EB19C0008B4014 /* AppDelegate.swift */,
 				344FEFBC23EB19C0008B4014 /* SceneDelegate.swift */,
 				344FEFBE23EB19C0008B4014 /* ViewController.swift */,
+				3422490623EDB57D0040709A /* CompaniesInformationTableViewController.swift */,
 				344FEFC023EB19C0008B4014 /* Main.storyboard */,
 				344FEFC323EB19C2008B4014 /* Assets.xcassets */,
 				344FEFC523EB19C2008B4014 /* LaunchScreen.storyboard */,
 				344FEFC823EB19C2008B4014 /* Info.plist */,
+				340DE90E23EC64E000127F8C /* GoogleService-Info.plist */,
 			);
 			path = cybozu_compnies_informationApp;
 			sourceTree = "<group>";
@@ -128,6 +164,16 @@
 			path = cybozu_compnies_informationAppUITests;
 			sourceTree = "<group>";
 		};
+		3D3A035ADAC4531F623C7C6A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0182FC3ED0049673899987D8 /* Pods_cybozu_compnies_informationApp.framework */,
+				474B8973430AE1590CBB18E2 /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework */,
+				4816EC839026EB4391871271 /* Pods_cybozu_compnies_informationAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344FEFE123EB19C2008B4014 /* Build configuration list for PBXNativeTarget "cybozu_compnies_informationApp" */;
 			buildPhases = (
+				EBE2F1A3017C7AD79D472FE1 /* [CP] Check Pods Manifest.lock */,
 				344FEFB323EB19C0008B4014 /* Sources */,
 				344FEFB423EB19C0008B4014 /* Frameworks */,
 				344FEFB523EB19C0008B4014 /* Resources */,
+				48E0C1334BCD1EAF87337811 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +200,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344FEFE423EB19C2008B4014 /* Build configuration list for PBXNativeTarget "cybozu_compnies_informationAppTests" */;
 			buildPhases = (
+				F5D09FE39D31B28777B514E4 /* [CP] Check Pods Manifest.lock */,
 				344FEFC923EB19C2008B4014 /* Sources */,
 				344FEFCA23EB19C2008B4014 /* Frameworks */,
 				344FEFCB23EB19C2008B4014 /* Resources */,
@@ -170,9 +219,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344FEFE723EB19C2008B4014 /* Build configuration list for PBXNativeTarget "cybozu_compnies_informationAppUITests" */;
 			buildPhases = (
+				2BA2ACAE2DBC439B1BEA39D8 /* [CP] Check Pods Manifest.lock */,
 				344FEFD423EB19C2008B4014 /* Sources */,
 				344FEFD523EB19C2008B4014 /* Frameworks */,
 				344FEFD623EB19C2008B4014 /* Resources */,
+				80D1FC636AED749BFA0275A5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				344FEFC723EB19C2008B4014 /* LaunchScreen.storyboard in Resources */,
+				340DE90F23EC64E000127F8C /* GoogleService-Info.plist in Resources */,
 				344FEFC423EB19C2008B4014 /* Assets.xcassets in Resources */,
 				344FEFC223EB19C0008B4014 /* Main.storyboard in Resources */,
 			);
@@ -254,11 +306,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BA2ACAE2DBC439B1BEA39D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		48E0C1334BCD1EAF87337811 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80D1FC636AED749BFA0275A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBE2F1A3017C7AD79D472FE1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cybozu_compnies_informationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5D09FE39D31B28777B514E4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-cybozu_compnies_informationAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		344FEFB323EB19C0008B4014 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3422490723EDB57D0040709A /* CompaniesInformationTableViewController.swift in Sources */,
 				344FEFBF23EB19C0008B4014 /* ViewController.swift in Sources */,
 				344FEFBB23EB19C0008B4014 /* AppDelegate.swift in Sources */,
 				344FEFBD23EB19C0008B4014 /* SceneDelegate.swift in Sources */,
@@ -432,7 +588,9 @@
 		};
 		344FEFE223EB19C2008B4014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91184C9903CBE7A9F0D03D06 /* Pods-cybozu_compnies_informationApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = cybozu_compnies_informationApp/Info.plist;
@@ -449,7 +607,9 @@
 		};
 		344FEFE323EB19C2008B4014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE55C4E6F7E8D26E39EBCBA6 /* Pods-cybozu_compnies_informationApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = cybozu_compnies_informationApp/Info.plist;
@@ -466,6 +626,7 @@
 		};
 		344FEFE523EB19C2008B4014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701542C510A9AC3AA04E12CF /* Pods-cybozu_compnies_informationAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -487,6 +648,7 @@
 		};
 		344FEFE623EB19C2008B4014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31E54E714E226A0ACA4DDD8 /* Pods-cybozu_compnies_informationAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +670,7 @@
 		};
 		344FEFE823EB19C2008B4014 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1449BDE122B6F05811C0F0A9 /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -527,6 +690,7 @@
 		};
 		344FEFE923EB19C2008B4014 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7932C737A67DC993BF3C4D8D /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

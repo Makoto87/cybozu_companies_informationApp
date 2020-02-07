@@ -1,0 +1,6 @@
+framework module Pods_cybozu_compnies_informationApp {
+  umbrella header "Pods-cybozu_compnies_informationApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
