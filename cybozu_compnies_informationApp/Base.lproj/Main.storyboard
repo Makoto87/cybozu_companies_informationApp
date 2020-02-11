@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="auC-JE-CiF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="SWl-4B-vjC">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
@@ -22,82 +22,61 @@
             </objects>
             <point key="canvasLocation" x="139" y="131"/>
         </scene>
-        <!--Companies Information Table View Controller-->
-        <scene sceneID="soN-h8-OeW">
+        <!--Table View Controller-->
+        <scene sceneID="LzA-jJ-Tqg">
             <objects>
-                <tableViewController id="auC-JE-CiF" customClass="CompaniesInformationTableViewController" customModule="cybozu_compnies_informationApp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LQw-p4-rZH">
+                <viewController id="SWl-4B-vjC" customClass="TableViewController" customModule="cybozu_compnies_informationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OeZ-sJ-s2V">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GYd-0K-v6C">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="174" id="SBL-3g-0XJ" customClass="TableCell" customModule="cybozu_compnies_informationApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="174"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SBL-3g-0XJ" id="8pE-lQ-sYM">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="174"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w5e-XC-Ntm">
+                                                    <rect key="frame" x="30" y="21" width="354" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="w5e-XC-Ntm" firstAttribute="top" secondItem="8pE-lQ-sYM" secondAttribute="topMargin" constant="10" id="8Iq-TL-EbM"/>
+                                                <constraint firstItem="w5e-XC-Ntm" firstAttribute="leading" secondItem="8pE-lQ-sYM" secondAttribute="leadingMargin" constant="10" id="O9g-bX-xDd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="w5e-XC-Ntm" secondAttribute="trailing" constant="10" id="k4c-f9-0V4"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="companyName" destination="w5e-XC-Ntm" id="xXO-RD-UQ4"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="181" id="n3N-In-5bH" customClass="Cell" customModule="cybozu_compnies_informationApp" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="181"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n3N-In-5bH" id="b7X-F7-08P">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="社名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gRF-VZ-yVq">
-                                            <rect key="frame" x="30" y="19" width="354" height="30"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="業界" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0tj-FX-2q5">
-                                            <rect key="frame" x="30" y="64" width="354" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="資本金" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Jd-gk-ISc">
-                                            <rect key="frame" x="30" y="95" width="354" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="従業員数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3T-It-Efu">
-                                            <rect key="frame" x="30" y="126" width="354" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                    </subviews>
-                                    <constraints>
-                                        <constraint firstItem="4Jd-gk-ISc" firstAttribute="top" secondItem="0tj-FX-2q5" secondAttribute="bottom" constant="10" id="7Hb-UJ-P5V"/>
-                                        <constraint firstItem="gRF-VZ-yVq" firstAttribute="top" secondItem="b7X-F7-08P" secondAttribute="topMargin" constant="8" id="9Qs-Qb-qOW"/>
-                                        <constraint firstItem="gRF-VZ-yVq" firstAttribute="leading" secondItem="b7X-F7-08P" secondAttribute="leadingMargin" constant="10" id="C1N-0L-g38"/>
-                                        <constraint firstItem="4Jd-gk-ISc" firstAttribute="leading" secondItem="b7X-F7-08P" secondAttribute="leadingMargin" constant="10" id="Cgr-3r-wgH"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="gRF-VZ-yVq" secondAttribute="trailing" constant="10" id="EGD-pf-Eaz"/>
-                                        <constraint firstItem="0tj-FX-2q5" firstAttribute="top" secondItem="gRF-VZ-yVq" secondAttribute="bottom" constant="15" id="KL3-0Z-2cX"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="4Jd-gk-ISc" secondAttribute="trailing" constant="10" id="hPn-VJ-IlV"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="h3T-It-Efu" secondAttribute="trailing" constant="10" id="jaz-Ut-0SV"/>
-                                        <constraint firstItem="h3T-It-Efu" firstAttribute="top" secondItem="4Jd-gk-ISc" secondAttribute="bottom" constant="10" id="jhH-mj-8PW"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="0tj-FX-2q5" secondAttribute="trailing" constant="10" id="lbX-CO-8PL"/>
-                                        <constraint firstItem="h3T-It-Efu" firstAttribute="leading" secondItem="b7X-F7-08P" secondAttribute="leadingMargin" constant="10" id="sNv-j7-QC6"/>
-                                        <constraint firstItem="0tj-FX-2q5" firstAttribute="leading" secondItem="b7X-F7-08P" secondAttribute="leadingMargin" constant="10" id="xL4-JO-7Jn"/>
-                                    </constraints>
-                                </tableViewCellContentView>
-                                <connections>
-                                    <outlet property="capitalLabel" destination="4Jd-gk-ISc" id="Qfv-xi-hSx"/>
-                                    <outlet property="comapanyNameLabel" destination="gRF-VZ-yVq" id="9eJ-TQ-T5m"/>
-                                    <outlet property="industryLabel" destination="0tj-FX-2q5" id="VRk-1P-hZ8"/>
-                                    <outlet property="numberOfMembersLabel" destination="h3T-It-Efu" id="j9G-Gs-wgu"/>
-                                </connections>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="auC-JE-CiF" id="WRq-jz-jfu"/>
-                            <outlet property="delegate" destination="auC-JE-CiF" id="TXn-4o-oBS"/>
-                        </connections>
-                    </tableView>
+                        <constraints>
+                            <constraint firstItem="wYa-jg-fUQ" firstAttribute="bottom" secondItem="GYd-0K-v6C" secondAttribute="bottom" id="FMX-6i-ych"/>
+                            <constraint firstItem="GYd-0K-v6C" firstAttribute="leading" secondItem="wYa-jg-fUQ" secondAttribute="leading" id="HaQ-qk-4Uw"/>
+                            <constraint firstItem="wYa-jg-fUQ" firstAttribute="trailing" secondItem="GYd-0K-v6C" secondAttribute="trailing" id="Key-s1-sbb"/>
+                            <constraint firstItem="GYd-0K-v6C" firstAttribute="top" secondItem="wYa-jg-fUQ" secondAttribute="top" id="QEB-3s-G4p"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wYa-jg-fUQ"/>
+                    </view>
                     <connections>
-                        <outlet property="mainTableView" destination="LQw-p4-rZH" id="qX9-DC-W6t"/>
+                        <outlet property="mainTableView" destination="GYd-0K-v6C" id="m7S-qA-24y"/>
                     </connections>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="e3b-He-IfS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XmQ-n7-1A8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1202.8985507246377" y="130.58035714285714"/>
+            <point key="canvasLocation" x="1282.608695652174" y="130.58035714285714"/>
         </scene>
     </scenes>
 </document>
