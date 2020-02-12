@@ -18,6 +18,8 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     let db = Firestore.firestore()
     // 投稿のデータベースから取ってくる情報をすべて格納
     var items = [NSDictionary]()
+    // 次の画面へ持っていくテキスト
+    var nvcCompanyName = ""
     
     
     override func viewDidLoad() {
@@ -68,11 +70,29 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
     }
     
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
+    // セル選択時
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let dict = items[(indexPath as NSIndexPath).row]
+        nvcCompanyName = (dict["companyName"] as? String)!
+        
+        // 別の画面に遷移
+        performSegue(withIdentifier: "detailSegue", sender: nil)
+        
+    }
     
-   
+    // 画面遷移時のメソッド
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        guard segue.identifier == "detailSegue", let secondVC = segue.destination as? DetailViewController  else{
+            return
+        }
+        // 情報を渡す
+        secondVC.companyName = nvcCompanyName
+        
+    }
+    
+    
 }
 
 class TableCell: UITableViewCell {
