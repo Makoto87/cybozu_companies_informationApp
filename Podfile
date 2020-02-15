@@ -19,6 +19,8 @@ pod 'Firebase/Firestore'
 pod 'FirebaseFirestoreSwift'
 
 pod 'Firebase/Auth'
+pod 'GoogleSignIn'
+pod 'FirebaseUI/Google'
 
   target 'cybozu_compnies_informationAppTests' do
     inherit! :search_paths

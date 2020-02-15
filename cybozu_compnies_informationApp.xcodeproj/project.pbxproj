@@ -189,6 +189,7 @@
 				344FEFB423EB19C0008B4014 /* Frameworks */,
 				344FEFB523EB19C0008B4014 /* Resources */,
 				48E0C1334BCD1EAF87337811 /* [CP] Embed Pods Frameworks */,
+				399C5CBBCD37F5C7D7A96218 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,6 +228,7 @@
 				344FEFD523EB19C2008B4014 /* Frameworks */,
 				344FEFD623EB19C2008B4014 /* Resources */,
 				80D1FC636AED749BFA0275A5 /* [CP] Embed Pods Frameworks */,
+				36E2E9371B0E26071AC313CB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -330,6 +332,40 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36E2E9371B0E26071AC313CB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		399C5CBBCD37F5C7D7A96218 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-cybozu_compnies_informationApp/Pods-cybozu_compnies_informationApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		48E0C1334BCD1EAF87337811 /* [CP] Embed Pods Frameworks */ = {
