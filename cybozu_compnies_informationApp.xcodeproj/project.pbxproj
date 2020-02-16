@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0E533694348EF21ABACB923D /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 474B8973430AE1590CBB18E2 /* Pods_cybozu_compnies_informationApp_cybozu_compnies_informationAppUITests.framework */; };
+		34019C2F23F92ACD00CF40C7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34019C2E23F92ACD00CF40C7 /* PostViewController.swift */; };
 		340DE90F23EC64E000127F8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 340DE90E23EC64E000127F8C /* GoogleService-Info.plist */; };
 		34202F8123F3011400396235 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34202F8023F3011400396235 /* TableViewController.swift */; };
 		34219D1523F44EBB00FBB81F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34219D1423F44EBB00FBB81F /* DetailViewController.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		0182FC3ED0049673899987D8 /* Pods_cybozu_compnies_informationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_cybozu_compnies_informationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1449BDE122B6F05811C0F0A9 /* Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests/Pods-cybozu_compnies_informationApp-cybozu_compnies_informationAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		34019C2E23F92ACD00CF40C7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		340DE90E23EC64E000127F8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34202F8023F3011400396235 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		34219D1423F44EBB00FBB81F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				344FEFBE23EB19C0008B4014 /* ViewController.swift */,
 				34219D1423F44EBB00FBB81F /* DetailViewController.swift */,
 				34202F8023F3011400396235 /* TableViewController.swift */,
+				34019C2E23F92ACD00CF40C7 /* PostViewController.swift */,
 				344FEFC023EB19C0008B4014 /* Main.storyboard */,
 				344FEFC323EB19C2008B4014 /* Assets.xcassets */,
 				344FEFC523EB19C2008B4014 /* LaunchScreen.storyboard */,
@@ -453,6 +456,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34019C2F23F92ACD00CF40C7 /* PostViewController.swift in Sources */,
 				344FEFBF23EB19C0008B4014 /* ViewController.swift in Sources */,
 				344FEFBB23EB19C0008B4014 /* AppDelegate.swift in Sources */,
 				34219D1523F44EBB00FBB81F /* DetailViewController.swift in Sources */,

@@ -28,6 +28,11 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
+//        // データを取ってくるメソッド
+//        fetch()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
         // データを取ってくるメソッド
         fetch()
     }
@@ -104,6 +109,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     }
     
     
+    @IBAction func toPostButton(_ sender: Any) {
+        performSegue(withIdentifier: "toPostViewController", sender: nil)
+    }
     
 }
 

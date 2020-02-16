@@ -60,7 +60,7 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // google認証用のメソッド
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
-        createGoogleSigninButton()
+//        createGoogleSigninButton()
         
     }
     
