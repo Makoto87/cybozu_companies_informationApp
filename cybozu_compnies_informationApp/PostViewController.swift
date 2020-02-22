@@ -68,8 +68,8 @@ class PostViewController: UIViewController, UITextFieldDelegate {
         let numberOfMembers = numberOfMembersTextField.text
         // Firestoreに飛ばす箱を用意
         let companies: NSDictionary = ["companyName": companyName ?? "", "capital": capital!, "numberOfMembers": numberOfMembers as Any]
-        // firebaseに送る
-        db.collection("companies").addDocument(data: companies as! [String : Any])
+        // firebaseに送る。ドキュメントとドキュメント内に入れるデータの作成
+        db.collection("companies").document(companyName!).setData(companies as! [String : Any])
 
         // 画面を消す
 //        self.dismiss(animated: true)

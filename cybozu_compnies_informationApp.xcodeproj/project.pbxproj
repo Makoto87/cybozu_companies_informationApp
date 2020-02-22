@@ -11,6 +11,7 @@
 		34019C2F23F92ACD00CF40C7 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34019C2E23F92ACD00CF40C7 /* PostViewController.swift */; };
 		340DE90F23EC64E000127F8C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 340DE90E23EC64E000127F8C /* GoogleService-Info.plist */; };
 		34202F8123F3011400396235 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34202F8023F3011400396235 /* TableViewController.swift */; };
+		3421749423FC2AC6005062E0 /* CommentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3421749323FC2AC6005062E0 /* CommentTableViewController.swift */; };
 		34219D1523F44EBB00FBB81F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34219D1423F44EBB00FBB81F /* DetailViewController.swift */; };
 		344FEFBB23EB19C0008B4014 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFBA23EB19C0008B4014 /* AppDelegate.swift */; };
 		344FEFBD23EB19C0008B4014 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344FEFBC23EB19C0008B4014 /* SceneDelegate.swift */; };
@@ -47,6 +48,7 @@
 		34019C2E23F92ACD00CF40C7 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		340DE90E23EC64E000127F8C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34202F8023F3011400396235 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3421749323FC2AC6005062E0 /* CommentTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewController.swift; sourceTree = "<group>"; };
 		34219D1423F44EBB00FBB81F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		344FEFB723EB19C0008B4014 /* cybozu_compnies_informationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cybozu_compnies_informationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		344FEFBA23EB19C0008B4014 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				34219D1423F44EBB00FBB81F /* DetailViewController.swift */,
 				34202F8023F3011400396235 /* TableViewController.swift */,
 				34019C2E23F92ACD00CF40C7 /* PostViewController.swift */,
+				3421749323FC2AC6005062E0 /* CommentTableViewController.swift */,
 				344FEFC023EB19C0008B4014 /* Main.storyboard */,
 				344FEFC323EB19C2008B4014 /* Assets.xcassets */,
 				344FEFC523EB19C2008B4014 /* LaunchScreen.storyboard */,
@@ -457,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34019C2F23F92ACD00CF40C7 /* PostViewController.swift in Sources */,
+				3421749423FC2AC6005062E0 /* CommentTableViewController.swift in Sources */,
 				344FEFBF23EB19C0008B4014 /* ViewController.swift in Sources */,
 				344FEFBB23EB19C0008B4014 /* AppDelegate.swift in Sources */,
 				34219D1523F44EBB00FBB81F /* DetailViewController.swift in Sources */,

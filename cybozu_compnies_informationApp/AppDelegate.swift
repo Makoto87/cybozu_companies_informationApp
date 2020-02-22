@@ -65,11 +65,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 
         guard let authentication = user.authentication else { return }
         let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken, accessToken: authentication.accessToken)
-        
+
         //Firebase Baas側に認証(初回時はレコードを作成)
         Auth.auth().signIn(with: credential) { (authResult, error) in
         }
-        
+
         //ユーザ情報へのアクセス
         Auth.auth().addStateDidChangeListener { (auth, user) in
             if let currentUser = auth.currentUser{
@@ -77,13 +77,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, GIDSignInDelegate {
 //                print(currentUser.displayName!)
                 print(currentUser.email!)
 //                print(currentUser.photoURL!)
-                
+
                 //アドレス確認メールの送信
                 Auth.auth().currentUser?.sendEmailVerification { (error) in
                 }
             }
         }
     }
+    
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
         // Perform any operations when the user disconnects from app here.
         // ...

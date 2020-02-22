@@ -274,31 +274,120 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIB-tQ-kG0">
+                                <rect key="frame" x="132" y="239" width="150" height="30"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="mav-J5-fnE"/>
+                                </constraints>
+                                <state key="normal" title="コメント一覧へ"/>
+                                <connections>
+                                    <action selector="toCommentList:" destination="gh4-Pf-ng3" eventType="touchUpInside" id="XoW-lp-EfL"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="コメント" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="trD-w2-Aql">
+                                <rect key="frame" x="30" y="309" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="commentTextField:" destination="gh4-Pf-ng3" eventType="editingChanged" id="Maf-w0-RwS"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2q-Rz-fsi">
+                                <rect key="frame" x="147" y="363" width="120" height="30"/>
+                                <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="wgt-d8-1Hv"/>
+                                </constraints>
+                                <state key="normal" title="コメント投稿"/>
+                                <connections>
+                                    <action selector="postCommentButton:" destination="gh4-Pf-ng3" eventType="touchUpInside" id="UlD-Sd-1V8"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="mUj-4J-f6X" firstAttribute="trailing" secondItem="bY5-ZO-7AB" secondAttribute="trailing" constant="20" id="0Ej-8h-hRK"/>
+                            <constraint firstItem="trD-w2-Aql" firstAttribute="top" secondItem="hIB-tQ-kG0" secondAttribute="bottom" constant="40" id="0j9-sl-3lv"/>
                             <constraint firstItem="bY5-ZO-7AB" firstAttribute="top" secondItem="FRU-Nx-MRK" secondAttribute="bottom" constant="20" id="8T6-VK-0pQ"/>
+                            <constraint firstItem="hIB-tQ-kG0" firstAttribute="top" secondItem="ZbV-l6-afo" secondAttribute="bottom" constant="50" id="9O9-46-zws"/>
+                            <constraint firstItem="mUj-4J-f6X" firstAttribute="trailing" secondItem="trD-w2-Aql" secondAttribute="trailing" constant="30" id="E26-VE-syw"/>
                             <constraint firstItem="mUj-4J-f6X" firstAttribute="trailing" secondItem="ZbV-l6-afo" secondAttribute="trailing" constant="20" id="GHO-hu-apz"/>
+                            <constraint firstItem="trD-w2-Aql" firstAttribute="leading" secondItem="mUj-4J-f6X" secondAttribute="leading" constant="30" id="JoA-HE-8Aj"/>
+                            <constraint firstItem="L2q-Rz-fsi" firstAttribute="top" secondItem="trD-w2-Aql" secondAttribute="bottom" constant="20" id="M9g-Ib-hwu"/>
                             <constraint firstItem="FRU-Nx-MRK" firstAttribute="top" secondItem="mUj-4J-f6X" secondAttribute="top" constant="30" id="SnG-Za-Q01"/>
                             <constraint firstItem="ZbV-l6-afo" firstAttribute="leading" secondItem="mUj-4J-f6X" secondAttribute="leading" constant="20" id="Xjo-rJ-ZbM"/>
                             <constraint firstItem="ZbV-l6-afo" firstAttribute="top" secondItem="bY5-ZO-7AB" secondAttribute="bottom" constant="20" id="f0q-Fx-t8C"/>
                             <constraint firstItem="FRU-Nx-MRK" firstAttribute="leading" secondItem="mUj-4J-f6X" secondAttribute="leading" constant="20" id="gKX-3S-6v0"/>
                             <constraint firstItem="bY5-ZO-7AB" firstAttribute="leading" secondItem="mUj-4J-f6X" secondAttribute="leading" constant="20" id="mPf-iX-tWr"/>
                             <constraint firstItem="mUj-4J-f6X" firstAttribute="trailing" secondItem="FRU-Nx-MRK" secondAttribute="trailing" constant="20" id="nuk-t8-Eg0"/>
+                            <constraint firstItem="hIB-tQ-kG0" firstAttribute="centerX" secondItem="TUD-xc-Ra9" secondAttribute="centerX" id="qSL-72-c6A"/>
+                            <constraint firstItem="L2q-Rz-fsi" firstAttribute="centerX" secondItem="TUD-xc-Ra9" secondAttribute="centerX" id="zZe-mX-ZRX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="mUj-4J-f6X"/>
                     </view>
                     <navigationItem key="navigationItem" id="Ske-gc-PbS"/>
                     <connections>
                         <outlet property="capitalLabel" destination="bY5-ZO-7AB" id="Gm5-UJ-d6S"/>
+                        <outlet property="commentTextField" destination="trD-w2-Aql" id="Ual-gL-Tly"/>
                         <outlet property="companyNameLabel" destination="FRU-Nx-MRK" id="MlC-kc-zw1"/>
                         <outlet property="numberOfMembersLabel" destination="ZbV-l6-afo" id="oto-fg-MGj"/>
+                        <outlet property="postCommentButton" destination="L2q-Rz-fsi" id="zzI-28-7LT"/>
+                        <segue destination="FrA-0w-GCh" kind="show" identifier="toList" id="rby-PO-8xN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3cw-qE-6Cf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3118.840579710145" y="130.58035714285714"/>
+        </scene>
+        <!--Comment Table View Controller-->
+        <scene sceneID="YM4-Ct-KSQ">
+            <objects>
+                <tableViewController storyboardIdentifier="CommentTableView" id="FrA-0w-GCh" customClass="CommentTableViewController" customModule="cybozu_compnies_informationApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ch1-fY-beU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CommentCell" rowHeight="172" id="m6C-v6-9Nc" customClass="commentTableViewCell" customModule="cybozu_compnies_informationApp" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="172"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="m6C-v6-9Nc" id="MOD-zT-4F9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="172"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DT4-Kb-Dhw">
+                                            <rect key="frame" x="20" y="11" width="374" height="150"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="DT4-Kb-Dhw" secondAttribute="trailing" id="1r6-cp-ema"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="DT4-Kb-Dhw" secondAttribute="bottom" id="6eo-2c-Jgb"/>
+                                        <constraint firstItem="DT4-Kb-Dhw" firstAttribute="leading" secondItem="MOD-zT-4F9" secondAttribute="leadingMargin" id="XK8-h6-9Jr"/>
+                                        <constraint firstItem="DT4-Kb-Dhw" firstAttribute="top" secondItem="MOD-zT-4F9" secondAttribute="topMargin" id="tlw-mZ-XmC"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="commentLabel" destination="DT4-Kb-Dhw" id="mqD-fv-Lho"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FrA-0w-GCh" id="MHl-hk-h2E"/>
+                            <outlet property="delegate" destination="FrA-0w-GCh" id="odg-97-M9a"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="C23-c2-srj"/>
+                    <connections>
+                        <outlet property="commentTableView" destination="Ch1-fY-beU" id="3xB-ai-9lt"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cAW-lc-pqG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4176.811594202899" y="130.58035714285714"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Hiq-cg-psm">
