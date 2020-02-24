@@ -14,6 +14,7 @@ class PostViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var comapnyTextField: UITextField!
     @IBOutlet weak var capitalTextField: UITextField!
     @IBOutlet weak var numberOfMembersTextField: UITextField!
+    @IBOutlet weak var jobhuntingFlowTextView: UITextView!
     @IBOutlet weak var postButton: UIButton!
     
     
@@ -60,14 +61,17 @@ class PostViewController: UIViewController, UITextFieldDelegate {
         buttonisEnabled()
     }
     
+    
+    
 
     @IBAction func postButton(_ sender: Any) {
         
         let companyName = comapnyTextField.text
         let capital = capitalTextField.text
         let numberOfMembers = numberOfMembersTextField.text
+        let jobhunting = jobhuntingFlowTextView.text
         // Firestoreに飛ばす箱を用意
-        let companies: NSDictionary = ["companyName": companyName ?? "", "capital": capital!, "numberOfMembers": numberOfMembers as Any]
+        let companies: NSDictionary = ["companyName": companyName ?? "", "capital": capital!, "numberOfMembers": numberOfMembers as Any, "jobhunting": jobhunting as Any]
         // firebaseに送る。ドキュメントとドキュメント内に入れるデータの作成
         db.collection("companies").document(companyName!).setData(companies as! [String : Any])
 

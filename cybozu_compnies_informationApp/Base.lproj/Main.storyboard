@@ -208,8 +208,18 @@
                                     <action selector="numberOfNumbersTextField:" destination="vSe-bA-6I8" eventType="editingChanged" id="637-3W-cn4"/>
                                 </connections>
                             </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="BYq-Gq-YVF" customClass="JobhuntingFlowTextView" customModule="cybozu_compnies_informationApp" customModuleProvider="target">
+                                <rect key="frame" x="30" y="348" width="354" height="128"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="hAh-sL-JC2"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0oV-N2-HDz">
-                                <rect key="frame" x="162" y="348" width="90" height="30"/>
+                                <rect key="frame" x="162" y="516" width="90" height="30"/>
                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="ykc-jU-563"/>
@@ -225,13 +235,16 @@
                             <constraint firstItem="3FM-4I-Ecl" firstAttribute="leading" secondItem="zzW-wA-628" secondAttribute="leading" constant="30" id="14E-1c-vO5"/>
                             <constraint firstItem="zzW-wA-628" firstAttribute="trailing" secondItem="AoP-Mj-U9f" secondAttribute="trailing" constant="30" id="53f-vo-yf4"/>
                             <constraint firstItem="x1M-Py-1v0" firstAttribute="leading" secondItem="zzW-wA-628" secondAttribute="leading" constant="30" id="8Zf-5v-CXe"/>
-                            <constraint firstItem="0oV-N2-HDz" firstAttribute="top" secondItem="3FM-4I-Ecl" secondAttribute="bottom" constant="40" id="Epg-gb-HaE"/>
                             <constraint firstItem="zzW-wA-628" firstAttribute="trailing" secondItem="3FM-4I-Ecl" secondAttribute="trailing" constant="30" id="GMv-QU-gpk"/>
                             <constraint firstItem="x1M-Py-1v0" firstAttribute="top" secondItem="AoP-Mj-U9f" secondAttribute="bottom" constant="40" id="TFu-lp-uLQ"/>
+                            <constraint firstItem="BYq-Gq-YVF" firstAttribute="leading" secondItem="zzW-wA-628" secondAttribute="leading" constant="30" id="bKU-EH-Qgi"/>
                             <constraint firstItem="AoP-Mj-U9f" firstAttribute="top" secondItem="zzW-wA-628" secondAttribute="top" constant="70" id="bLH-Lc-g5v"/>
                             <constraint firstItem="3FM-4I-Ecl" firstAttribute="top" secondItem="x1M-Py-1v0" secondAttribute="bottom" constant="40" id="eh9-sY-cdF"/>
+                            <constraint firstItem="0oV-N2-HDz" firstAttribute="top" secondItem="BYq-Gq-YVF" secondAttribute="bottom" constant="40" id="fLG-oZ-uoa"/>
                             <constraint firstItem="AoP-Mj-U9f" firstAttribute="leading" secondItem="zzW-wA-628" secondAttribute="leading" constant="30" id="nul-VS-KaP"/>
+                            <constraint firstItem="zzW-wA-628" firstAttribute="trailing" secondItem="BYq-Gq-YVF" secondAttribute="trailing" constant="30" id="tam-6h-wPH"/>
                             <constraint firstItem="zzW-wA-628" firstAttribute="trailing" secondItem="x1M-Py-1v0" secondAttribute="trailing" constant="30" id="u8o-hs-LSu"/>
+                            <constraint firstItem="BYq-Gq-YVF" firstAttribute="top" secondItem="3FM-4I-Ecl" secondAttribute="bottom" constant="40" id="uvE-i5-2GL"/>
                             <constraint firstItem="0oV-N2-HDz" firstAttribute="centerX" secondItem="IHe-8u-pFc" secondAttribute="centerX" id="xL0-u3-GEw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zzW-wA-628"/>
@@ -240,6 +253,7 @@
                     <connections>
                         <outlet property="capitalTextField" destination="x1M-Py-1v0" id="Me3-BF-D3C"/>
                         <outlet property="comapnyTextField" destination="AoP-Mj-U9f" id="uCS-TE-TvB"/>
+                        <outlet property="jobhuntingFlowTextView" destination="BYq-Gq-YVF" id="YmY-Jx-fAy"/>
                         <outlet property="numberOfMembersTextField" destination="3FM-4I-Ecl" id="Pnl-gM-EE1"/>
                         <outlet property="postButton" destination="0oV-N2-HDz" id="gDV-PR-7aL"/>
                     </connections>
