@@ -20,6 +20,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     var items = [NSDictionary]()
     // 次の画面へ持っていくテキスト
     var nvcCompanyName = ""
+    var nvcCapital = ""
+    var nvcNumberOfMembers = ""
+    var jobhuntingFlow = ""
     
     
     override func viewDidLoad() {
@@ -80,6 +83,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         
         let dict = items[(indexPath as NSIndexPath).row]
         nvcCompanyName = (dict["companyName"] as? String)!
+        nvcCapital = (dict["capital"] as? String)!
+        nvcNumberOfMembers = (dict["numberOfMembers"] as? String)!
+        jobhuntingFlow = (dict["jobhunting"] as? String)!
         
         // 別の画面に遷移
         performSegue(withIdentifier: "detailSegue", sender: nil)
@@ -94,6 +100,9 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         }
         // 情報を渡す
         secondVC.companyName = nvcCompanyName
+        secondVC.capital = nvcCapital
+        secondVC.numberOfMembers = nvcNumberOfMembers
+        secondVC.jobHuntingFlow = jobhuntingFlow
         
     }
     

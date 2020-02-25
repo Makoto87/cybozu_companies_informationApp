@@ -15,6 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var companyNameLabel: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var numberOfMembersLabel: UILabel!
+    @IBOutlet weak var jobhuntingFlowTextLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     @IBOutlet weak var postCommentButton: UIButton!
     
@@ -22,6 +23,9 @@ class DetailViewController: UIViewController {
     
     // 画面遷移前の情報を持ってくる
     var companyName = ""
+    var capital = ""
+    var numberOfMembers = ""
+    var jobHuntingFlow = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +33,10 @@ class DetailViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         // 前画面の情報を入れる
-        companyNameLabel.text = companyName
+        companyNameLabel.text = "会社名 ： " + companyName
+        capitalLabel.text = "資本金　：　" + capital
+        numberOfMembersLabel.text = "従業員数　：　" + numberOfMembers
+        jobhuntingFlowTextLabel.text = "選考フロー　" + jobHuntingFlow
         // ボタンを使えなくする
         postCommentButton.isEnabled = false
     }
