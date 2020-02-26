@@ -39,24 +39,9 @@ class ViewController: UIViewController, FUIAuthDelegate {
         
         db = Firestore.firestore()
         
-//        // Add a new document with a generated ID
-//        var ref: DocumentReference? = nil
-//        ref = db.collection("users").addDocument(data: [
-//            "first": "Ada",
-//            "last": "Lovelace",
-//            "born": 1815
-//        ]) { err in
-//            if let err = err {
-//                print("Error adding document: \(err)")
-//            } else {
-//                print("Document added with ID: \(ref!.documentID)")
-//            }
-//        }
-        
         // google認証用のメソッド
         GIDSignIn.sharedInstance()?.presentingViewController = self
         GIDSignIn.sharedInstance().signIn()
-//        createGoogleSigninButton()
         
         // Googleログインボタンを丸くする
         googleLoginButton.layer.masksToBounds = true
@@ -83,23 +68,17 @@ class ViewController: UIViewController, FUIAuthDelegate {
         // エラー時の処理をここに書く
     }
     
-    // Googleボタン
-    func createGoogleSigninButton(){
-        let googleButton = GIDSignInButton ()
-        googleButton.frame = CGRect(x: 20, y: self.view.frame.height/2-30, width: self.view.frame.width-40, height: 60)
-        self.view.addSubview(googleButton)
-    }
     
-    // タイムラインへ遷移するメソッド。認証成功時に組み込む
-    func toTimeLine(){
-        // storyboardのfileの特定
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        // 移動先のNavigationControllerをインスタンス化。
-        let nc = storyboard.instantiateViewController(withIdentifier: "NavigationBar") as! UINavigationController
-        nc.modalPresentationStyle = .fullScreen // 全面表示
-        self.present(nc, animated: true)
-    }
-    
+//    // タイムラインへ遷移するメソッド。認証成功時に組み込む
+//    func toTimeLine(){
+//        // storyboardのfileの特定
+//        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//        // 移動先のNavigationControllerをインスタンス化。
+//        let nc = storyboard.instantiateViewController(withIdentifier: "NavigationBar") as! UINavigationController
+//        nc.modalPresentationStyle = .fullScreen // 全面表示
+//        self.present(nc, animated: true)
+//    }
+//
     
     // エラーが返ってきた場合のアラート。Error型が使われている
     func showErrorAlert(error: Error?) {

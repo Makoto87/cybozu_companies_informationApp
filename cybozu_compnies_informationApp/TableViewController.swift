@@ -31,8 +31,6 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         mainTableView.delegate = self
         mainTableView.dataSource = self
         
-//        // データを取ってくるメソッド
-//        fetch()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -64,14 +62,16 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
         return items.count
     }
     
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell: TableCell = self.mainTableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableCell
         
         // itemsの中からindexpathのrow番目を取得
         let dict = items[(indexPath as NSIndexPath).row]
-        
-        
         cell.companyName.text = dict["companyName"] as? String
         
         return cell
@@ -81,6 +81,7 @@ class TableViewController: UIViewController, UITableViewDataSource, UITableViewD
     // セル選択時
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        // 詳細画面用にデータを格納する
         let dict = items[(indexPath as NSIndexPath).row]
         nvcCompanyName = (dict["companyName"] as? String)!
         nvcCapital = (dict["capital"] as? String)!

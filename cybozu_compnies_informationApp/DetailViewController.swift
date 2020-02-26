@@ -18,6 +18,8 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var jobhuntingFlowTextLabel: UILabel!
     @IBOutlet weak var commentTextField: UITextField!
     @IBOutlet weak var postCommentButton: UIButton!
+    // アラート
+    var alertController: UIAlertController!
     
     let db = Firestore.firestore()
     
@@ -51,6 +53,18 @@ class DetailViewController: UIViewController {
            }
        }
     
+    // コメントを入力した後に出すアラート
+    func alert(title:String, message:String) {
+        alertController = UIAlertController(title: title,
+                                   message: message,
+                                   preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK",
+                                       style: .default,
+                                       handler: nil))
+        present(alertController, animated: true)
+    }
+    
+    
     @IBAction func toCommentList(_ sender: Any) {
         
         // 画面遷移時
@@ -71,6 +85,12 @@ class DetailViewController: UIViewController {
         // テキストフィールドのコメントを格納
         let comment = ["comment" : commentTextField!.text!]
         db.collection("companies").document(companyName).collection("comments").addDocument(data: comment)
+        // 文字を消す
+        commentTextField.text = ""
+        // アラートを出す
+        alert(title: "コメントしました",
+        message: "")
+        postCommentButton.isEnabled = false
     }
     
 
